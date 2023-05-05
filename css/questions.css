@@ -1,0 +1,274 @@
+.questions {
+  margin-left: 0;
+  margin-bottom: 103px;
+}
+
+.questions__title {
+  margin-top: 85.5px;
+}
+
+.questions-list {
+  margin-top: 38px;
+  margin-left: 3px;
+}
+
+.questions-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 37px;
+  padding-bottom: 25px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #cacaca;
+  cursor: pointer;
+}
+
+.questions-item:first-child {
+  border-top: 1px solid #cacaca;
+}
+
+.questions-item {
+  margin-top: -1px;
+}
+
+.questions-item:hover {
+  color: var(--hover-color);
+  border-top: 1px solid var(--hover-color);
+  border-bottom: 1px solid var(--hover-color);
+}
+
+.questions-item__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.questions-item__title-slash {
+  color: #CACACA;
+  margin-left: 3px;
+}
+
+.questions-item:hover .questions-item__accord {
+  filter: contrast(0.8);
+}
+
+.questions-item__accord {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-top: -2px;
+  margin-right: 2px;
+  background-color: #ECECEC;
+  border-radius: 40px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.questions-item__accord::after {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 1px;
+  position: absolute;
+  top: 9px;
+  left: 24px;
+  background-color: #666666;
+}
+
+.questions-item__accord::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 1px;
+  position: absolute;
+  top: 9px;
+  left: 24px;
+  background-color: #666666;
+  transform: rotate(90deg);
+}
+
+.ui-state-active .questions-item__accord {
+  transform: rotate(45deg);
+}
+
+.accordion-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.accordion-text {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.accordion__text-end {
+  margin-top: 20px;
+}
+
+.ui-accordion-header-icon {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+  .questions {
+    margin-left: 0px;
+    margin-bottom: 55px;
+  }
+
+  .questions__title {
+    margin-top: 0px;
+  }
+
+  .questions-list {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .questions-item {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .questions-item__title {
+    width: 83%;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+
+  .questions-item__accord {
+    width: 50px;
+    height: 50px;
+  }
+
+  .questions-item__accord::after {
+    height: 31px;
+    top: 9px;
+    left: 24px;
+  }
+
+  .questions-item__accord::before {
+    height: 31px;
+    top: 9px;
+    left: 24px;
+  }
+
+  .questions-item__title-slash {
+    margin-left: 0;
+  }
+
+  .accordion-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:768px) {
+  .questions {
+    margin-left: 0px;
+    margin-bottom: 57.5px;
+  }
+
+  .questions__title {
+    margin-top: 0;
+    font-size: 49px;
+    letter-spacing: -1.9px;
+  }
+
+  .questions-list {
+    margin-top: 42px;
+  }
+
+  .questions-item {
+    width: 100%;
+  }
+
+  .questions-item__title {
+    width: 87%;
+  }
+
+  .questions-item__title-3 {
+    width: 70%;
+  }
+
+  .questions-item__title-4 {
+    width: 82%;
+  }
+
+  .questions-item__title-5 {
+    width: 73%;
+  }
+}
+
+@media (max-width: 747px) {
+  .questions__title {
+    font-size: 29px;
+  }
+
+  .questions-item__title {
+    width: 80%;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 320px) {
+  .questions {
+    margin-left: 0;
+    margin-bottom: 41px;
+  }
+
+  .questions__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+
+  .questions-list {
+    margin-top: 15px;
+  }
+
+  .questions-item__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.55px;
+  }
+
+  .questions-item__accord {
+    width: 30px;
+    height: 30px;
+  }
+
+  .questions-item__accord::before {
+    height: 18px;
+    top: 6px;
+    left: 15px;
+  }
+
+  .questions-item__accord::after {
+    height: 18px;
+    top: 6px;
+    left: 15px;
+  }
+
+  .questions-item__title {
+    width: 76%;
+  }
+
+  .questions-item__title-4 {
+    width: 84%;
+  }
+
+  .questions-item__title-5 {
+    width: 90%;
+  }
+}
